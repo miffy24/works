@@ -1,0 +1,60 @@
+html{
+	color: #fff;
+	font-size: 2rem;
+}
+header{
+background: #22292c;
+height: 3.6rem;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 .5rem;
+}
+header .revert{
+	display: flex;
+	justify-content: center;
+}
+header .revert .arrow{
+	padding-right: 0.5rem;
+	height: 1.5rem;
+
+}
+
+header .details{
+display: flex;
+justify-content: center;
+}
+header .details img{
+	padding:0 0.1rem;
+}
+main{
+	background: #68cdd5;
+	padding: 1rem;
+
+	padding-bottom: 13rem;
+}
+main .btn_revert{
+	height: 2.5rem;
+	display: block;
+
+}
+main>.wrapper>img{
+	margin: 0 auto;
+	display: block;
+	padding-bottom: 7rem;
+}
+main>.wrapper>.description{display: block;
+	line-height: 2rem;
+padding-bottom: 11rem;
+}
+main .wrapper .pic{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+
+}
+main .wrapper .pic .text{
+	display: block;
+
+}

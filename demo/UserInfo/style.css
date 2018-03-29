@@ -1,0 +1,104 @@
+*{
+	margin: 0;padding: 0;
+}
+html{
+	font-size: 62.5%;
+}
+header{
+	background:#5fc0cd;
+	padding: 2rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: white;
+	font-size: 2rem;
+}
+header .title{
+margin: 0 auto;
+}
+main .banner{
+	background:  url(./img/bac.png);
+	background-size: cover;
+	height: 20rem;
+}
+main .banner .mask{
+	background: rgba(0,0 ,0 ,0.2);
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0 2rem;
+}
+main .banner >.mask >img{
+	margin-right: 2rem;
+	width: 5rem;
+}
+
+main .banner >.mask .user{
+color: #fff;
+}
+main .banner >.mask .user .userInfo{
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+main .banner >.mask .user .userInfo .name{
+	margin-right: 1rem;
+}
+form{
+	font-size: 1.6rem;
+}
+form .info{
+	padding: 2em ;
+	border-bottom: 1px solid #e1e5e7;
+	margin-left: 2rem;
+	display: flex;
+	font-size: 1.6rem;
+}
+form .skills{
+	padding: 2rem 0;
+	display: flex;
+	border-bottom: 1px solid #e1e5e7;
+}
+form >.skills span{
+	margin-left: 2rem;
+	padding-left: .5rem;
+	border-left: .2rem solid #5fc0cd;
+}
+form >.info >.star{
+	border-left: 1px solid #e1e5e7;
+	padding-left: .5rem;
+}
+form >.info>.tag{
+	color: #afafaf;
+	margin-right: 1rem;
+	padding-right: 1rem;
+	border-right: 1px solid #e1e5e7;
+}
+form>.info>.price{
+	color:#e26163;
+}
+form >.info span{
+	display: inline-block;
+
+}
+footer{
+display: flex;
+justify-content: space-around;
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
+footer >button{
+width: 10rem;
+align-items: center;
+font-size: 1.6rem;
+background: white;
+padding:1rem 1rem;
+border-radius: .6rem;
+border: 1px solid #5fc0cd;
+}
+footer .message{
+	color:#5fc0cd;
+}
+footer .phone{
+	background: #5fc0cd;
+	color: white;
+}
