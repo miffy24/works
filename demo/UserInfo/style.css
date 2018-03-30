@@ -5,16 +5,21 @@ html{
 	font-size: 62.5%;
 }
 header{
+	position: fixed;
+	width: 100%;
 	background:#5fc0cd;
-	padding: 2rem;
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+	padding: 2rem 0;
+	top: 0;
+	left: 0;
+	text-align: center;
+
 	color: white;
 	font-size: 2rem;
 }
-header .title{
-margin: 0 auto;
+header .back{
+	left: 1rem;
+	position: absolute;
+
 }
 main .banner{
 	background:  url(./img/bac.png);
@@ -45,6 +50,7 @@ main .banner >.mask .user .userInfo .name{
 }
 form{
 	font-size: 1.6rem;
+	margin-bottom: 7rem;
 }
 form .info{
 	padding: 2em ;
@@ -81,13 +87,14 @@ form >.info span{
 
 }
 footer{
-display: flex;
-justify-content: space-around;
+width: 100%;
+position: fixed;
+bottom: 0;
 margin-top: 2rem;
 margin-bottom: 2rem;
 }
 footer >button{
-width: 10rem;
+width: 47%;
 align-items: center;
 font-size: 1.6rem;
 background: white;
@@ -97,6 +104,7 @@ border: 1px solid #5fc0cd;
 }
 footer .message{
 	color:#5fc0cd;
+	margin: 0 .5rem;
 }
 footer .phone{
 	background: #5fc0cd;
