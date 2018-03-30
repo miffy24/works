@@ -21,6 +21,9 @@ header .back{
 	position: absolute;
 
 }
+main{
+	margin-top: 6rem;
+}
 main .banner{
 	background:  url(./img/bac.png);
 	background-size: cover;
@@ -48,6 +51,10 @@ main .banner >.mask .user .userInfo{
 main .banner >.mask .user .userInfo .name{
 	margin-right: 1rem;
 }
+main .banner >.mask .location{
+	font-size: 2.2rem;
+	margin-left: .2rem;
+}
 form{
 	font-size: 1.6rem;
 	margin-bottom: 7rem;
@@ -68,6 +75,7 @@ form >.skills span{
 	margin-left: 2rem;
 	padding-left: .5rem;
 	border-left: .2rem solid #5fc0cd;
+	font-size: 2rem;
 }
 form >.info >.star{
 	border-left: 1px solid #e1e5e7;
@@ -90,12 +98,10 @@ footer{
 width: 100%;
 position: fixed;
 bottom: 0;
-margin-top: 2rem;
-margin-bottom: 2rem;
+margin-bottom: 6rem;
 }
 footer >button{
 width: 47%;
-align-items: center;
 font-size: 1.6rem;
 background: white;
 padding:1rem 1rem;
@@ -104,9 +110,14 @@ border: 1px solid #5fc0cd;
 }
 footer .message{
 	color:#5fc0cd;
-	margin: 0 .5rem;
+	position: absolute;
+
+	left: 0.5rem;
 }
 footer .phone{
 	background: #5fc0cd;
 	color: white;
+	position: absolute;
+
+	right: 0.5rem;
 }
