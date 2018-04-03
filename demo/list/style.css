@@ -1,0 +1,206 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.clearfix::after{
+	display: block;
+	content: '';
+	clear: both;
+}
+ul{
+	list-style: none;
+}
+html{
+	font-size:62.5%;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	background: #5fc0cd;
+	padding-top: .6rem;
+	border-bottom: 1px solid #ddd;
+}
+header .top{
+	margin-bottom: .5rem;
+}
+.btn{
+	font-size: 1.6rem;
+	border: none;
+	padding: 1.5rem 2rem;
+	border-radius: .5rem;
+}
+header .left{
+	background: #55a8b3;
+	color: white;
+	margin-right: -0.2rem;
+}
+header .right{
+	background: white;
+	color: #5fc0cd;
+
+}
+
+header .topNavBar{
+	font-size: 1.4rem;
+	color: #999;
+	background: #fff;
+	border-bottom:1px solid #e1e5e7;
+	padding-top:1rem;
+	padding-bottom: 1rem;
+}
+header .topNavBar .main-tag{
+float: left;
+position: relative;
+width:33.3%;
+text-align: center;
+}
+header .main-tag:not(:last-child){
+	border-right: 1px solid #e2e6e8;
+}
+/*下拉列表*/
+.dropdown-content{
+	display: none;
+	width: 100%;
+	box-sizing: content-box;
+	margin-top: 1rem;
+	color: black;
+    position: absolute;
+    opacity: 0.8;
+    background-color: #f8fafb;
+}
+.dropdown-content >p:hover{
+	opacity: 1;
+	background: #999;
+}
+.main-tag:hover .dropdown-content {
+    display: block;
+}
+
+/*列表*/
+main{
+	margin-top:10rem;
+	margin-bottom: 10rem;
+}
+.main-info{
+	padding-left: .5rem;
+	color: #999;
+	border-bottom: 1px solid #ddd;
+	font-size: 1.6rem;
+	margin-left: 1rem;
+}
+.main-info ul>li {
+	padding-top: .2rem;
+	padding-bottom: .2rem;
+}
+.main-info .icon{
+    display: inline-block;
+    margin-right: .5rem;
+}
+.main-info ul>li:nth-child(2){
+	color: #000;
+	padding-left: 1.5rem;
+}
+.price{
+	float: right;
+	color: red;
+	font-size: 1.8rem;
+}
+
+footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: #f8fafb;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+.footer-left{
+	color: #5fc0cd;
+	position: absolute;
+	top:3.5rem;
+	left: 20%;
+}
+.footer-middle{
+	width: 5rem;
+	height: 5rem;
+	background: #5fc0cd;
+	left: 50%;
+	border-radius: 50%;
+	margin:0 auto;
+}
+.footer-right{
+	right: 20%;
+	position: absolute;
+	top:3rem;
+	color: #999;
+}
+/* for CSS sprite*/
+.icon {
+    background: url("img/css_sprites.png") no-repeat;
+}
+.bg-task06-01 {
+    position: absolute
+    border: none;
+    top: 2rem;
+    right: 2rem;
+    width: 2rem;
+    height: 1.7rem;
+    background-position: 0 0;
+}
+.bg-task06-02 {
+	border: none;
+    width: 2rem;
+    height: 1.8rem;
+    background-position: -1.3rem 0;
+}
+.bg-task06-03 {
+    position: relative;
+    border: none;
+    top: 1.6rem;
+    left: 1.6rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-position: -1.4rem -1.6rem;
+}
+.bg-task06-04 {
+	border: none;
+    width: 2rem;
+    height: 2rem;
+    background-position:0.2rem -1.2rem;
+}
+.bg-task06-05 {
+    width: 1.1rem;
+    height: 1.1rem;
+    background-position: -3.22rem .2rem;
+}
+.bg-task06-06 {
+    position: relative;
+    left: 0.2rem;
+    width: 0.8rem;
+    height: 1rem;
+    background-position: -39px -26px;
+}
+.bg-task06-07 {
+    position: relative;
+    top: 0.3rem;
+    width: 0.8rem;
+    height: 1.4rem;
+    margin-left: 1rem;
+    padding-right: 1rem;
+    background-position: -3.1rem -0.8rem;
+}
+.bg-task06-08 {
+	position: relative;
+	width: 0.6rem;
+	height: .4rem;
+	top:.55rem;
+	padding-right: .5rem;
+	padding-left: .5rem;
+	margin-left: .5rem;
+	background-position: 0 -3.2rem;
+}
