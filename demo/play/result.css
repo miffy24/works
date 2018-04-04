@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-size:62.5%;
+}
+
+header{
+	position: fixed;
+
+	background:	#29bde0;
+	top: 0;
+	text-align: center;
+	font-size: 2rem;
+	padding: 1rem;
+	color: #fff;
+	border-bottom: 2px solid #74d4eb;
+}
+
+main{
+	margin-top: 5.6rem;
+	background:	#29bde0;
+	margin-bottom: 5rem;
+}
+.main-header{
+	height: 8rem;
+	background: url(./img/win.png) no-repeat 50% 50%/14rem 8rem;
+}
+main >.win{
+	color:#ffc865;
+	font-size: 2rem;
+
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+.win-content{
+	font-size: 1.6rem;
+	color: white;
+	padding-left: 3rem;
+	padding-right: 3rem;
+}
+.detail{
+	background: #fff;
+}
+.detail .date{
+	color:#515151;
+	font-size: 1.6rem;
+}
+.detail .time{
+	color: #cfcfcf;
+	font-size: 1.4rem;
+}
+.detail .die{
+	color: #bebebe;
+	margin-bottom: 1rem;
+	border-bottom: 1px solid #efefef;
+	font-size: 1.5rem;
+}
+.detail .info{
+	margin-bottom: 1rem;
+}
+footer{
+	position: fixed;
+	width: 100%;
+	background:  rgba(153,223,240,0.6);
+	bottom: 0;
+	height: 6rem;
+}
+footer button{
+	border:none;
+	font-size: 1.4rem;
+	margin: 1rem;
+	padding:1rem 2rem;
+	color: white;
+	border-radius: .5rem;
+}
+footer .again{
+background: #f66f6f;
+}
+footer .upload{
+	background: #fbb435;
+}

@@ -1,8 +1,13 @@
 *{
 	margin: 0;padding: 0;
 }
+a{
+	text-decoration: none;
+}
 html{
 	font-size: 62.5%;
+}
+body{
 	background: #29bde0;
 }
 .clearfix::after{
@@ -14,10 +19,123 @@ html{
 header{
 position: fixed;
 top: 0;
+width: 100%;
 background: #29bde0;
 font-size: 1.6rem;
 text-align: center;
+z-index: 2;
 }
+.first-line {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.first-line > span:nth-child(2) {
+    color: #fff;
+    text-align: center;
+}
+
+.second-line{
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	background: #b9e9f5;
+	color: #464646;
+}
+.triangle{
+	width: 0;
+	height: 0;
+	border-left: .7rem solid transparent;
+	border-right: .7rem solid transparent;
+	border-top: .8rem solid #b9e9f5;
+}
+.third-line>span{
+	padding: .5rem;
+}
+
+main{
+	padding-top: 15rem;
+	padding-bottom: 10rem;
+}
+main .square{
+	height: 21vh;
+	width: 20vw;
+}
+main .square-content{
+	border: 2px solid #fff;
+	margin-bottom: .2rem;
+}
+main .square span{
+	display: block;
+	text-align: center;
+
+}
+main .square>.square-content>span:first-child{
+	background:#f5c97b;
+	font-size: 1.6rem;
+	padding: 2rem;
+	color: #565656;
+}
+main .square>.square-content>span:last-child{
+	background:#83b09a;
+	font-style: 1.2rem;
+	color: #fff;
+}
+main .square >.selection  {
+	height: 25%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	visibility: hidden;
+
+}
+main .square:hover>.selection{
+	visibility: visible;
+}
+.kill {
+	width: 20%;
+	height: 60%;
+	display: inline-block;
+    background: url(./img/kill.png) no-repeat 0 0/100% 100%;
+    border: none;
+
+}
+.find {
+	width: 20%;
+	height: 60%;
+	display: inline-block;
+    background: url(./img/find.png) no-repeat 0 33.3%/100% 100%;
+    border: none;
+}
+.load {
+	width: 20%;
+	height: 60%;
+	display: inline-block;
+    background: url(./img/load.png) no-repeat 0 66.6%/100% 100%;
+    border: none;
+}
+.save {
+	width: 20%;
+	height: 60%;
+	display: inline-block;
+    background: url(./img/save.png) no-repeat 0 100%/100% 100%;
+    border: none;
+
+}
+footer{
+	z-index: 2;
+	background: #29bde0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 2rem 4rem;
+}
+footer div{
+	background:#fbb435;
+	font-size: 1.6rem;
+	padding: 2rem;
+	text-align: center;
+
+}
+/*css sprites*/
 .icon{
 	background: url(./img/css_sprites.png)no-repeat ;
 }
@@ -41,37 +159,4 @@ text-align: center;
     width: 2.6rem;
     height: 2.6rem;
     background-position: -.4rem -.6rem;
-}
-.first-line {
-    padding-top: 1rem;
-    padding-bottom: 0.8rem;
-}
-.first-line > span:nth-child(2) {
-    color: #fff;
-    text-align: center;
-}
-
-.second-line{
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	background: #b9e9f5;
-	color: #464646;
-}
-.triangle{
-	width: 0;
-	height: 0;
-	border-left: .7rem solid transparent;
-	border-right: .7rem solid transparent;
-	border-top: .8rem solid #b9e9f5;
-}
-.third-line>span{
-	padding: .5rem;
-}
-main{
-	margin-top: 13rem;
-	align-items: center;
-}
-.little-square{
-	flex-direction: column;
-	align-items: column
 }
