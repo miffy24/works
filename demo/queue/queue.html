@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>queue</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        li{
+            float: left;
+            background: pink;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <button id="btn-left">左侧插入</button>
+    <button id="btn-right">右侧插入</button>
+    <button id="reright">右侧移除</button>
+    <button id="releft">左侧移除</button>
+    <ul id="list">
+    </ul>
+    <script>
+        //初始化
+
+        var data = []
+        var text = document.querySelector('input')    
+        var list = document.getElementById('list')
+        var ileft = document.getElementById('btn-left')
+        var iright = document.getElementById('btn-right')
+        var rleft = document.getElementById('releft')
+        var rright = document.getElementById('reright')
+        
+        function initInput(){
+            text.value = ""
+            list.innerText = ''
+        }
+        /*
+        *判断输入内容
+        */
+        function vertify(str){
+            if(str ===''){
+                alert('请输入值')
+                return false
+            }else if(isNaN(str)){
+                alert('请输入数字')
+                return false
+            }else{
+                return true
+            }
+        }
+        //绑定事件,点击就传入data中
+        ileft.onclick = function(){
+            if(vertify(text.value)){
+                data.unshift(text.value)
+            }
+            initInput()
+            render()
+        }
+        iright.onclick = function(){
+            if(vertify(text.value)){
+                data.push(text.value)
+            }
+            initInput()
+            render()            
+        }
+
+        rleft.onclick = function(){
+            data.shift() 
+            initInput()
+            render() 
+            setTimeout(() => {
+                alert('data的个数'+ data.length)
+            }, 100)
+        }
+        rright.onclick = function(){
+            data.pop() 
+            initInput()
+            render() 
+            setTimeout(() => {
+                alert('data的个数'+ data.length)
+            }, 100)
+        }
+            
+        /*
+            显示数据
+        */
+        function render(){
+            for(var i = 0;i<data.length;i++){
+                var li = document.createElement('li')
+                li.id="item-"+i//设置li的id值
+                list.appendChild(li)
+                li.innerText  = data[i]
+                deleteSelected(i);
+            }
+        }
+        function deleteSelected(i){
+            var temp=document.getElementById("item-"+i)
+            temp.addEventListener("click",function(){
+                index=temp.id.substr(5)//获取删除元素的起始索引位置
+                data.splice(index,1)
+                initInput()
+                render()
+            })
+        }
+    </script>
+</body>
+</html>
